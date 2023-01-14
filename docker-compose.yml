@@ -9,4 +9,6 @@ services:
       - "33066:3306"
     volumes:
       - ./tmp/db:/var/lib/mysql
+  redis:
+    image: redis
 
