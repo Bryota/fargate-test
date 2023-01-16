@@ -10,7 +10,8 @@ RUN gem update --system && gem install bundler:2.1.4
 
 RUN apt-get update -qq
 
-COPY Gemfile Gemfile.lock .
+COPY Gemfile ./Gemfile
+COPY Gemfile.lock ./Gemfile.lock
 
 RUN bundle install
 
