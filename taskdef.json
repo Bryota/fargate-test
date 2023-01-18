@@ -67,7 +67,7 @@
         "memoryReservation": null,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "<IMAGE1_NAME>",
+        "image": "292298617424.dkr.ecr.ap-northeast-1.amazonaws.com/fargate-test:cdc97f1",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
