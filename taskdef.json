@@ -92,7 +92,7 @@
         "dockerLabels": null,
         "systemControls": null,
         "privileged": null,
-        "name": "fargate-test"
+        "name": "fargate-te"
       }
     ],
     "placementConstraints": [],

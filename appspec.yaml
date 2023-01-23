@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-          ContainerName: "fargate-tes"
+          ContainerName: "fargate-test"
           ContainerPort: 80
