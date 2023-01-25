@@ -9,7 +9,7 @@
           "logDriver": "awslogs",
           "secretOptions": null,
           "options": {
-            "awslogs-group": "/ecs/fargate-test",
+            "awslogs-group": "/ecs/fargate-tes",
             "awslogs-region": "ap-northeast-1",
             "awslogs-stream-prefix": "ecs"
           }
@@ -46,19 +46,19 @@
         "workingDirectory": null,
         "secrets": [
           {
-            "valueFrom": "/fargate-test/db-password",
+            "valueFrom": "/fargate-tes/db-password",
             "name": "DB_PASSWORD"
           },
           {
-            "valueFrom": "/fargate-test/db-host",
+            "valueFrom": "/fargate-tes/db-host",
             "name": "DB_HOST"
           },
           {
-            "valueFrom": "/fargate-test/db-username",
+            "valueFrom": "/fargate-tes/db-username",
             "name": "DB_USERNAME"
           },
           {
-            "valueFrom": "/fargate-test/rails-master-key",
+            "valueFrom": "/fargate-tes/rails-master-key",
             "name": "RAILS_MASTER_KEY"
           }
         ],
@@ -102,8 +102,8 @@
       "EC2",
       "FARGATE"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:292298617424:task-definition/fargate-test:11",
-    "family": "fargate-test",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:292298617424:task-definition/fargate-tes:11",
+    "family": "fargate-tes",
     "requiresAttributes": [
       {
         "targetId": null,
