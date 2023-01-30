@@ -76,7 +76,8 @@
         "healthCheck": {
           "retries": 3,
           "command": [
-            "/app/entrypoint.sh"
+            "CMD-SHELL",
+            "curl -k -f http://0.0.0.0:80/ || exit 1"
           ],
           "timeout": 5,
           "interval": 30,
