@@ -15,4 +15,11 @@ class HomeController < ApplicationController
         end
         send_data(csv_data, filename: "ユーザー一覧.csv", type: :csv)
     end
+
+    def csv_invalid
+        csv_data = CSV.generate do |csv|
+            csv << ["ユーザー名", "メールアドレス"]
+        end
+        send_data(csv_data, filename: "テスト?/<>テスト:.csv", type: :csv)
+    end
 end

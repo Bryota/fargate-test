@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/', to: 'home#index'
   get '/csv', to: 'home#csv'
+  get '/csv_invalid', to: 'home#csv_invalid'
   get '/show', to: 'home#show'
 
 end
